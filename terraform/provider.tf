@@ -9,6 +9,5 @@ terraform {
 
 provider "azurerm" {
   features {}
-
-  subscription_id = "8***************************************"
+  # No subscription_id here — will use env vars from pipeline SP
 }
