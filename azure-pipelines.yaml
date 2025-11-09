@@ -50,3 +50,4 @@ stages:
       inputs:
         targetPath: "$(System.DefaultWorkingDirectory)/terraform/tf_output.json"
         artifactName: "tf-output"
+
