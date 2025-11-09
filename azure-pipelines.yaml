@@ -14,7 +14,7 @@ stages:
   - job: Terraform_Apply
     displayName: 'Terraform Apply'
     pool:
-      name: 'self-hosted-agent-pool'
+      name: 'Linux-hosted-agent'
     steps:
  
     # Not needed for hosted vm
@@ -42,7 +42,7 @@ stages:
 
     - task: AzureCLI@2
       inputs:
-        azureSubscription: 'it-azure-connection'
+        azureSubscription: 'epicbook-connection'
         addSpnToEnvironment: true
         scriptType: bash
         scriptLocation: inlineScript
@@ -63,4 +63,5 @@ stages:
     - task: PublishPipelineArtifact@1
       inputs:
         targetPath: "$(System.DefaultWorkingDirectory)/terraform/tf_output.json"
+
         artifactName: "tf-output"
