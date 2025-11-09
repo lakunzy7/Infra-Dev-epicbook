@@ -1,7 +1,7 @@
 # General Settings
 application_name = "epic-book"
 environment      = "dev"
-location         = "Australia Central"
+location         = "South Africa North"
 
 # Networking Configuration
 vnet_address_space             = ["10.0.0.0/16"]
@@ -15,3 +15,4 @@ admin_password = "YourSecureVMPassword123!"
 mysql_admin_username = "mysqladmin"
 mysql_admin_password = "YourSecureMySQLPassword123!"
 mysql_database_name  = "bookstore_dev"
+
