@@ -11,8 +11,6 @@ terraform {
 # AzureRM Provider
 provider "azurerm" {
   features {}
-
-  # Do NOT hardcode subscription or credentials here.
-  # Azure DevOps pipeline injects them automatically as environment variables:
-  # ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_TENANT_ID, ARM_SUBSCRIPTION_ID
+  subscription_id = "76ac7853-64f7-4ae7-97f6-e0ace42c6322"
 }
+
